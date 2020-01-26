@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgbDateStruct, NgbDate,NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 import { conditionallyCreateMapObjectLiteral } from '@angular/compiler/src/render3/view/util';
 import { ReadKeyExpr, analyzeAndValidateNgModules } from '@angular/compiler';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -90,11 +91,13 @@ export class AppComponent {
   yearly_frequecy=false;
   on_completion_frequecy: boolean;
   one_time_frequecy: boolean;
-  constructor(private calendar: NgbCalendar) {
+  app_url:any;
+  constructor(private calendar: NgbCalendar,private router: Router) {
   }
   ngOnInit(){
-let res=this.calendar.getNext(this.calendar.getToday(),'d',-1);
-console.log("kjhkjd",res);
+
+    this.app_url=this.router.url;
+    console.log("hhh",this.app_url);
   }
   weeklyFrequecy(){
     this.weekly_frequency=true;

@@ -1,0 +1,42 @@
+<div class="container">
+  <form>
+    <ng-template #rt let-r="result" let-t="term">
+      <ngb-highlight [result]="r.name" [term]="t"></ngb-highlight>
+    </ng-template>
+    <label for="typeahead-template">Search user by name:</label>
+    <input id="typeahead-template" type="text" class="form-control" name="user_name" [(ngModel)]="userName"  [ngbTypeahead]="search" [resultTemplate]="rt"
+      [inputFormatter]="formatter" (selectItem)="selectedUser($event)" placeholder="Search user by name"/>
+    <hr>
+    <h2>User details</h2>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>User Id</th>
+          <th>Username</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Phone number</th>
+          <th>Website</th>
+          <th>Company</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of searched_employees" (click)="display_details(user.id)">
+          <td>{{user.id}}</td>
+          <td>{{user.username}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.email}}</td>
+          <td>
+            <p>City: {{user.address.city}}</p>
+            <p>Street: {{user.address.street}}</p>
+            <p>zip code: {{user.address.zipcode}}</p>
+          </td>
+          <td>{{user.phone}}</td>
+          <td>{{user.website}}</td>
+          <td>{{user.company.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</div>
