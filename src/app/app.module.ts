@@ -8,23 +8,30 @@ import bootstrap from "bootstrap";
 import { DecisionPointAssignmentComponent } from './decision-point-assignment/decision-point-assignment.component';
 import { Routes, RouterModule } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
-import { UserDetailsComponent } from './user-details/user-details.component'
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { DViateAssignmentComponent } from './dviate-assignment/dviate-assignment.component'
 
 const route: Routes = [
   {
     path: 'dpAssignment',
     component:DecisionPointAssignmentComponent
-  },{
+  },
+  {
     path: 'userDeials',
     component:UserDetailsComponent
     
+  },
+  {
+    path: 'DViate_ssignment',
+    component:DViateAssignmentComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     DecisionPointAssignmentComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    DViateAssignmentComponent
   ],
   imports: [
     BrowserModule,

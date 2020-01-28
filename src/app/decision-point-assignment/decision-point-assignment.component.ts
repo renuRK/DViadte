@@ -20,6 +20,8 @@ export class DecisionPointAssignmentComponent implements OnInit {
   constructor(private router: Router,private DPservice:DecisionPointService) { }
 
   ngOnInit() {
+    var a={a:'k'};
+    var b={a:'k'};
     this.userDetails();
     this.searched_employees=this.user_details;
     

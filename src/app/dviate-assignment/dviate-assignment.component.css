@@ -1,0 +1,198 @@
+.container{
+    border: 1px solid black;
+    height: auto;
+   
+}
+.section_1{
+    background-color: #0179CF;
+    height: 221px;
+    padding: 5px 4px 0px 15px;
+    
+}
+.time_text{
+    position: relative;
+    float:left;
+    color: white;
+    font-size: 14px;
+}
+.right_side_icons{
+    position: relative;
+    float: right;
+    color: white;
+    font-size: 14px;
+}
+.left_arrow{
+clear: both;
+font-size:48px;
+color:white;
+}
+.caption{
+ font-size: 30px;
+ color: white;
+}
+.info{
+    font-size: 14px;
+    color: white;
+    line-height:0px
+}
+.section_2{
+    padding: 5px 3px 0px 17px;
+}
+.box{
+    border: none;
+    height: 16em;
+    width: 29.5%;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+}
+.payment_mode{
+    border: none;
+    height: 16em;
+    width: 100%;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+}
+.payment_mode p{
+    font-size: 16px;
+    color: black;
+}
+.payment_mode i{
+    font-size: 10em;
+    color:#0179CF;
+}
+
+.vertical_line{
+    position: relative;
+    border-left: 2px solid darkgray;
+    height: 17em;
+    top: -6px;
+    margin-left:40px;
+    margin-right:40px;
+}
+.adjust_margin{
+    margin-left:30px;
+}
+.section_3{
+    padding: 5px 11px 0px 15px;
+    background-color: #E5E5E5;
+    margin:5px 13px 0px 16px;
+}
+.fa-copy{
+    color: #0179CF;
+    font-size: 18px;
+}
+.instrucion_msg{
+    padding: 5px 11px 0px 15px;
+    font-size: 30px;
+    color: black;
+}
+.upload_proof{
+    background-color:#0179CF ;
+    width:100%;
+   height: 5em;
+   border-radius: 5px;
+}
+.upload_proof i ,span{
+    font-size: 30px;
+    color: white;
+}
+
+.last_section{
+    background-color: white;
+    height: 119px;
+
+    box-shadow: 0px 0px 10px 0px;
+}
+.last_section button{
+    border:none;
+    background-color: white;
+}
+.last_section i{
+    font-size: 20px;
+}
+button#upi:active,button#upi:focus,
+button#nb:active,button#nb:focus,
+button#neft:active,button#neft:focus{
+    background-color: #0179CF;
+}
+
+button#upi:active,button#upi:focus i,
+button#upi:active,button#upi:focus p,
+button#nb:active,button#nb:focus i,
+button#nb:active,button#nb:focus p,
+button#neft:active,button#neft:focus i,
+button#neft:active,button#neft:focus p{
+    color:white;
+}
+button#loan:active,button#loan:focus i,
+button#blog:active,button#blog:focus i,
+button#chat:active,button#chat:focus i,
+button#brands:active,button#brands:focus i{
+    color: #FE7B37;
+}
+
+/* .section_2 .button:focus{
+    background-color: #0179CF;
+    
+}
+.section_2 .button:focus i,p{
+    
+    color:white;
+} */
+
+@media (max-width:575px){
+    .payment_mode{
+        border: 1px solid black;
+        height: 5em;
+    }
+    .payment_mode i{
+        font-size: 1em;
+    }
+    .box{
+        height: 5em;
+    }
+    .vertical_line{
+        height: 6em;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .adjust_margin{
+        margin-left:15px;
+    }
+    .section_2{
+        padding: 5px 12px 0px 18px;
+        
+    }
+}
+
+@media (max-width:376px){
+    
+    .payment_mode{
+        border: 1px solid black;
+        height: 5em;
+    }
+    .payment_mode i{
+        font-size: 1em;
+    }
+    .box{
+        height: 5em;
+    }
+    .vertical_line{
+        height: 6em;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .adjust_margin{
+        margin-left:15px;
+    }
+    .section_2{
+        padding: 5px 12px 0px 15px;
+        
+    }   
+    .payment_mode p{
+        font-size:6px !important;
+    }
+    .instrucion_msg{
+      font-size: 14px;
+    }
+}
